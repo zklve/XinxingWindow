@@ -1,0 +1,225 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>新兴门业</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="~/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <style>
+        .btnMenu {
+            display: inline-block;
+            margin-top: 20px;
+            height: 50px;
+        }
+
+        .divNav {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .grid-demo {
+            height: 150px;
+            padding: 10px 10px;
+        }
+
+        .grid-demo3 {
+            height: 50px;
+            padding: 5px 20px 5px 20px;
+            text-align: center;
+        }
+
+        .grid-foot {
+            height: 60px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .slogan {
+            height: 130px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        div::-webkit-scrollbar {
+            width: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="divBody" style="position:absolute">
+        <!--轮播图-->
+        <div class="layui-carousel" id="test10" style="width:100%">
+            <div carousel-item="">
+                <div><img src="~/images/Carousel/7.png" style="width:100%;height:100%"></div>
+                <div><img src="~/images/Carousel/3.png" style="width:100%;height:100%"></div>
+            </div>
+        </div>
+
+        <!--导航-->
+        <div style="padding: 10px 20px;text-align: center;">
+            <button type="button" id="btnProduct" class="layui-btn layui-btn-primary layui-btn-lg btnMenu">主营产品</button>
+            <button type="button" class="layui-btn layui-btn-primary layui-btn-lg btnMenu">联系我们</button>
+            <br />
+            <button type="button" class="layui-btn layui-btn-primary layui-btn-lg btnMenu">品牌文化</button>
+            <button type="button" class="layui-btn layui-btn-primary layui-btn-lg btnMenu">新闻动态</button>
+        </div>
+
+        <div class="divNav">
+            <p style="text-align:center;">
+                <strong>
+                    <span style="font-family:'Microsoft YaHei';font-size:1.2rem;color:#1e50ae">产品展示</span>
+                </strong>
+            </p>
+            <p style="text-align:center;"><span style="font-family:'Microsoft YaHei';color:#999999;">PRODUCTS</span></p>
+        </div>
+
+        <div class="layui-row">
+            <div class="layui-col-xs6">
+                <div class="grid-demo"><img src="~/images/Carousel/4.png" style="width:100%;height:100%"></div>
+            </div>
+            <div class="layui-col-xs6">
+                <div class="grid-demo"><img src="~/images/Carousel/5.png" style="width:100%;height:100%"></div>
+            </div>
+            <div class="layui-col-xs6">
+                <div class="grid-demo"><img src="~/images/Carousel/6.png" style="width:100%;height:100%"></div>
+            </div>
+            <div class="layui-col-xs6">
+                <div class="grid-demo"><img src="~/images/Carousel/2.png" style="width:100%;height:100%"></div>
+            </div>
+        </div>
+
+        <div class="divNav" style="padding-bottom:5px">
+            <p style="text-align:center;">
+                <strong>
+                    <span style="font-family:'Microsoft YaHei';font-size:1.2rem;color:#1e50ae">竭诚为你服务</span>
+                </strong>
+            </p>
+            <p style="text-align: center;"><span style="font-family:'Microsoft YaHei';color:#999999;">让您省时 省力 更省心</span></p>
+        </div>
+
+        <div class="layui-row" style="padding:10px 10px">
+            <div class="layui-col-xs3">
+                <div class="grid-demo3"><i class="layui-icon layui-icon-heart-fill" style="font-size: 50px; color: #FF9966;"></i>  </div>
+            </div>
+            <div class="layui-col-xs3">
+                <div class="grid-demo3"><i class="layui-icon layui-icon-face-smile" style="font-size: 50px; color: #FF9966;"></i>  </div>
+            </div>
+            <div class="layui-col-xs3">
+                <div class="grid-demo3"><i class="layui-icon layui-icon-service" style="font-size: 50px; color: #FF9966;"></i>  </div>
+            </div>
+            <div class="layui-col-xs3">
+                <div class="grid-demo3"><i class="layui-icon layui-icon-release" style="font-size: 50px; color: #FF9966;"></i>  </div>
+            </div>
+        </div>
+
+        <div class="layui-row" style="padding:15px 0px">
+            <div class="layui-col-xs6 layui-col-md12" style="width:100%">
+                <div class="slogan"><img src="~/images/Carousel/bg.png" style="width:100%;height:100%"></div>
+            </div>
+        </div>
+
+        <div class="divNav" style="padding-bottom:90px">
+            <p style="text-align:center;">
+                <strong>
+                    <span style=" font-size: 1.2rem;color: #1e50ae;font-family: 'Microsoft YaHei'">选门窗找我们就对了</span>
+                </strong>
+            </p>
+            <p style="text-align: center;"><span style="font-family:'Microsoft YaHei';color:#999999;">选我们的优势</span></p>
+            <p style="text-align:left;"><strong><span style="font-family:'Microsoft YaHei';font-size:15px;color:#1e50ae">1、精工雕琢工艺、注重细节设计，技术前沿</span></strong></p>
+            <p style="text-align:left;"><span style="font-family:'Microsoft YaHei';font-size:14px;color:#666;letter-spacing: 1px;">先进设计团队，先进的设计理念把坚固、安全、美观融为一体，充分体现高品质、高品位、高质量，拥有近百名电动伸缩门研发技术人员，国家专利达100余项，是电动伸缩门门行业标杆</span></p>
+            <p style="text-align:left;"><strong><span style="font-family:微软雅黑;font-size:15px;color:#1e50ae">2、强大的生产能力，行业翘楚</span></strong></p>
+            <p style="text-align:left;"><span style="font-family:微软雅黑;font-size:14px;color:#666;letter-spacing: 1px;">总部生产基地拥有9条完善的生产线，具备年产十万米电动伸缩门生产能力，先进生产设备，精湛工艺，提升您的品牌价值，伸缩门厂家直销 依据用户要求，定制非标产品的生产制造</span></p>
+            <p style="text-align:left;"><strong><span style="font-family:微软雅黑;font-size:15px;color:#1e50ae">3、先进的安装团队，量身定制解决方案</span></strong></p>
+            <p style="text-align:left;"><span style="font-family:微软雅黑;font-size:14px;color:#666;letter-spacing: 1px;">专业安装技术人员能够整合地理环境，工况环境，使用要求等，选择合适的电动门安装方案，快速高效解决您的安装问题，确保安装正确，电动伸缩门门运行顺畅，并提供贴心使用指导</span></p>
+        </div>
+
+        <div style="position:fixed;z-index:999;bottom:85px;right:10px" id="divTop"> <i class="layui-icon layui-icon-top" style="font-size: 55px;color: #3285ff; "></i> </div>
+
+        <!--底部-->
+        <div class="layui-row" style="padding:0px 0px;background-color:#3285ff;position:fixed;bottom:0px;width:100%;  ">
+            <div class="layui-col-xs3">
+                <div class="grid-foot">
+                    <a href="tel:15852943986">
+                        <i class="layui-icon layui-icon-cellphone" style="font-size: 40px; color: #fff;"></i>
+                        <br /><span style="text-align:center;color:white">电话咨询</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="layui-col-xs3">
+                <div class="grid-foot"><i class="layui-icon layui-icon-login-qq" style="font-size: 40px; color: #fff;"></i>  <br /><span style="text-align:center;color:white">QQ客服</span> </div>
+            </div>
+
+            <div class="layui-col-xs3">
+                <div class="grid-foot"><i class="layui-icon layui-icon-login-wechat" style="font-size: 40px; color: #fff;"></i> <br /><span style="text-align:center;color:white">微信联系</span>  </div>
+            </div>
+
+            <div class="layui-col-xs3">
+                <div class="grid-foot"><i class="layui-icon layui-icon-location" style="font-size: 40px; color: #fff;"></i> <br /><span style="text-align:center;color:white">在线地图</span>  </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="~/layui.js" charset="utf-8"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+    <script>
+        layui.use(['carousel', 'form', 'element'], function () {
+            var carousel = layui.carousel, form = layui.form;
+            var element = layui.element;
+
+            //图片轮播
+            carousel.render({
+                elem: '#test10'
+                , width: '100%'
+                , height: '200px'
+                , interval: 5000
+                , arrow: 'always'
+            });
+
+            var $ = layui.jquery;
+
+            $(document).scroll(function () {
+                var dh = $(window).height();//网页可视区高度
+                var hidtop = $(document).scrollTop();//网页被卷去的高度
+                if (dh > hidtop) {
+                    $("#divTop").fadeOut()
+                } else if (dh < hidtop) {
+                    $("#divTop").fadeIn()
+                }
+            });
+            $("#divTop").on("click", function () {
+                $('html,body').animate({ scrollTop: 0 }, 500);
+            })
+
+            $("#btnProduct").click(function () {
+                window.location.href = '@Url.Action("ProductShow", "XxDoor")';
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
